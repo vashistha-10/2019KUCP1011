@@ -1,19 +1,26 @@
-<html>
+ <html>
 <head>
 <title>Header</title>
 <style>
+tt{
+transform:rotate(40deg);
+}
 .ko{
-background-color:#3366CC;
+background:#3366CC;
+transform:rotate(70deg);
 text-decoration:none;
 color:#FFFFFF;
+height:100px;
+width:200px;
 padding: 10px 35px;
-transition:color 0.5s, background-color 0.5;
-transition:padding 0.5s;
+transition:color 0.5s, background 0.5s, padding 0.5s, transform 0.5s;
 border-radius: 15px 15px 15px 15px;
 }
-a.ko:hover{
-background-color:magenta;
+
+.ko:hover{
+background:magenta;
 color:white;
+transform:rotate(36deg);
 padding: 20px 35px;
 text-decoration:none;
 }
@@ -25,30 +32,87 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .style2 {color: #FFFFFF}
-.kk img{
-opacity:0.5;
-}
-.kk img:hover{
-opacity:1;
-}
+img{
+        height:300px;
+        width:0px;
+    }
+    @keyframes pic1{
+        0%{width:800px;}
+        25%{width:0px;}
+        50%{width:0px;}
+        75%{width:0px;}
+        100%{width:0px;}
+    }
+    @keyframes pic2{
+        0%{width:0px;}
+        25%{width:800px;}
+        50%{width:0px;}
+        75%{width:0px;}
+        100%{width:0px;}
+    }
+    @keyframes pic3{
+        0%{width:0px;}
+        25%{width:0px;}
+        50%{width:800px;}
+        75%{width:0px;}
+        100%{width:0px;}
+    }
+    @keyframes pic4{
+        0%{width:0px;}
+        25%{width:0px;}
+        50%{width:0px;}
+        75%{width:800px;}
+        100%{width:0px;}
+    }
+    @keyframes pic5{
+        0%{width:0px;}
+        25%{width:0px;}
+        50%{width:0px;}
+        75%{width:0px;}
+        100%{width:800px;}
+    }
+    #pi1{
+        animation-name: pic1;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+    #pi2{
+        animation-name: pic2;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+    #pi3{
+        animation-name: pic3;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+    #pi4{
+        animation-name: pic4;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+    #pi5{
+        animation-name: pic5;
+        animation-delay: 0s;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
 </style>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
 
 <body background="wall.jpg">
 <center>
 <p align="center">
-<iframe name="imageshow" width="900" height="330" align="center" style="{border:#00000;}"></iframe>
-<br>
-<br /><a href="welcome.jpg" target="imageshow" class="kk">
-<img src="welcome.jpg" width="152" height="68" class="kk"/></a>
-<a href="welcome2.jpg" target="imageshow" class="kk">
-<img src="welcome2.jpg" width="152" height="68" class="kk" /></a>
-<a href="welcome3.jpg" target="imageshow" class="kk">
-<img src="welcome3.jpg" width="152" height="68" class="kk"/></a>
-<a href="welcome4.jpg" target="imageshow" class="kk">
-<img src="welcome4.jpg" width="152" height="68" class="kk"/></a>
-<a href="welcome5.jpg" target="imageshow" class="kk">
-<img src="welcome5.jpg" width="152" height="68" class="kk"/></a></p>
+    <img src="welcome.jpg" id="pi1">
+    <img src="welcome2.jpg" id="pi2">
+    <img src="welcome3.jpg" id="pi3">
+    <img src="welcome4.jpg" id="pi4">
+    <img src="welcome5.jpg" id="pi5">
+</p>
 <span class="style2">
 <marquee>
 <font face="arial" size="+3"><strong>This is Official Website by 2019KUCP1011- Aman Vashistha</strong></font>
@@ -56,20 +120,20 @@ opacity:1;
 </span><br>
 <p>
     <font face="verdana" size=2>
-    <a href="introduction.html" target="aman" class="ko">Introduction</a>
+    <a href="introduction.html" target="aman" class="ko"><span class="tt">Introduction</span></a>
     <a href="projects.html" target="aman" class="ko">Projects</a>
     <a href="qualification.html" target="aman" class="ko">Qualification</a>
     <a href="location.html" target="aman" class="ko">Location</a>
     <a href="subjects.html" target="aman" class="ko">Subjects</a>
     <a href="abouthtml.html" target="aman" class="ko">About HTML</a>
-<a href="register.html" target="aman" class="ko">Register</a>	</font></p>
+    <a href="register.html" target="aman" class="ko">Register</a></font></p>
 </center><br>
 <iframe name="aman" height="500" width="1225" style="border:0px"></iframe>
 <br>
 <table width="1231" bg color="#3366CC">
   <tr><td width="1223" bgcolor="#3366FF"><p><span class="style1">This website is hosted by Aman Vashistha <br>
       All rights Reserved.</span></p>
-      <p><span class="style1">Latest Update : 7th Mar' 2020 <br>
+      <p><span class="style1">Latest Update : 17th Feb' 2020 <br>
         Contact Us : 80104XXXXX<br>
         Instagram : @XXXXXXXXXX</span><br>
       </p></td>
