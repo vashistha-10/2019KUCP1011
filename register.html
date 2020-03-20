@@ -1,5 +1,6 @@
 <html>
 <head>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <title>Register With us</title>
 <style type="text/css">
 <!--
@@ -46,19 +47,46 @@ color:white;
 
 <body><font color=white><p align="center">
 <p class="style3">Register With Us</p><hr>
+<div id="hidethis">
 <form name="register">
+
+
   <span class="style4">Name* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</span>          
- <br> <input type="text" class="lol"></input><br><br>
+ <br> <input type="text" class="lol" required></input><br><br>
  Gender*<br>Male<input type="radio" name="g">&nbsp;&nbsp;Female<input type="Radio" name="g">&nbsp;&nbsp;Others<input type="radio" name="g"><br><br>
   <span class="style4" class="lol">Email*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
   
-  <br><input type="text" class="lol"></input><br><br>
+  <br><input type="text" class="lol" required></input><br><br>
   <span class="style4" class="lol">Set a Password*&nbsp;&nbsp; </span>
-  <br><input type="password" class="lol"></input><br><br>
+  <br><input type="password" class="lol" required></input><br><br>
   Any Suggesstions to our work/ any comments:<br>
   <textarea class="lol2"></textarea><br><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="but"> &nbsp; <input type="reset" class="but">
-</form>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="but" id="kyu"> &nbsp; <input type="reset" class="but">
+
+
+</form></div>
+<h3 id="temp" class="notsubmitt">
+The form has been submitted and recorded successfully! Refresh the page to Re-Submit with new matter.
+</h3>
+<script>
+  $(document).ready(function(){
+      $("#kyu").click(function(){
+           $("#temp").addClass("submitt");
+           $("#hidethis").slideUp();
+  });
+});
+</script>
+<style>
+    .notsubmitt{
+         opacity:0;
+    }
+    .submitt{
+
+      opacity:1;
+      color:whitesmoke;
+      background-color: darkslategrey;
+    }
+</style>
 <br><b>Note : </b>Field with * are mandatory to fill
 </body>
 </html>
